@@ -1,0 +1,29 @@
+{
+   "name": "MyProject",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "@types/node": "^8.10.59",
+      "nodemon": "^2.0.3",
+      "ts-node": "^3.3.0",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "@koa/cors": "^3.0.0",
+      "@koa/router": "^8.0.8",
+      "bcrypt": "^4.0.1",
+      "dotenv": "^8.2.0",
+      "jsonwebtoken": "^8.5.1",
+      "koa": "^2.11.0",
+      "koa-bodyparser": "^4.3.0",
+      "lodash": "^4.17.15",
+      "pg": "^7.18.2",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "^0.2.24"
+   },
+   "scripts": {
+      "start": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec ts-node index.ts",
+      "build": "tsc -p .",
+      "build:live": "nodemon --watch '*.ts' --exec ts-node index.ts"
+   }
+}
